@@ -53,7 +53,7 @@
             <span class="linea"></span>
     
             <section class="row servicios">
-                <p>
+                <p class="pServicio">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus urna at tortor consequat,
                     eget
                     ullamcorper enim consectetur. Maecenas at erat in felis gravida viverra nec vel lacus. In ut malesuada
@@ -61,7 +61,7 @@
                     blandit
                     ac. Nulla facilisi.
                 </p>
-                <p class="texto">
+                <p class="pServicio">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus urna at tortor consequat,
                     eget
                     ullamcorper enim consectetur. Maecenas at erat in felis gravida viverra nec vel lacus. In ut malesuada
@@ -104,7 +104,7 @@
                     
                 </section>
                     
-                <p>
+                <p class="pServicio">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus urna at tortor consequat,
                     eget
                     ullamcorper enim consectetur. Maecenas at erat in felis gravida viverra nec vel lacus. In ut malesuada
@@ -117,7 +117,61 @@
                 </p>
                 <!-- <img src="./img/Servicios.jpeg" alt=""> -->
             </section>
-            <div  class="text-center"> <a class="botContacto" href="./contacto.html">CONTACTANOS</a> </div>
+
+
+            <!-- FORMULARIO DE CONTACTO -->
+            <section class="row d-flex justify-content-center">
+
+                <span class="linea"></span>
+
+                <!-- <p class="offset-lg-3 parrafo">Envianos un mensaje:</p> -->
+                <form class="formContacto col-lg-6 d-flex flex-column " novalidate>
+                  <div>
+                    <label for="validationCustom01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                    <div class="invalid-feedback">
+                      Ingrese su nombre.
+                    </div>
+                  </div>
+        
+                  <div>
+                    <label for="validationCustom02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                      Ingrese su apellido.
+                    </div>
+                  </div>
+        
+                  <div>
+                    <label for="validationCustom04" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="(Opcional)">
+                  </div>
+        
+                  <div>
+                    <label for="validationCustom05" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                      Ingrese email.
+                    </div>
+                  </div>
+        
+                  <div>
+        
+                    <div class="input-group">
+                      <span class="input-group-text">Mensaje</span>
+                      <textarea class="form-control"></textarea>
+                    </div>
+                  </div>
+        
+                  <div>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                  </div>
+        
+                </form>
+                <!-- <p class="offset-lg-3 parrafo">También podes contactarte directamente a nuestro email, Instagram o WhatsApp! -->
+              </section>
+
+            <!-- <div  class="text-center"> <a class="botContacto" href="./contacto.html">CONTACTANOS</a> </div> -->
     
         </main>
         <footer class="footer row">
