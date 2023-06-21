@@ -23,82 +23,77 @@
     <section class="container-fluid">
 
         <!-- encabezado -->
-        <header class="row" id="header">
-            <img class="logo col-lg-2" src="./img/style/reale sin fondo.png" alt="">
+        <header class="row headerWeb">
+            <img class="logoHeader col-lg-2" src="./img/style/reale sin fondo.png" alt="">
             <nav class="col-lg-10 align-self-center">
                 <ul class="nav nav-underline justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Inicio</a>
+                        <a class="nav-link navBar-mio" href="./index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <a class="nav-link navBar-mio" href="./contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./trabajos.html">Trabajos</a>
+                        <a class="nav-link active navBar-mio" aria-current="page" href="./trabajos.html">Trabajos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                        <a class="nav-link navBar-mio" href="./servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./sobreNosotros.html">Nosotros</a>
+                        <a class="nav-link navBar-mio" href="./sobreNosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./formaParte.html">Formá parte</a>
+                        <a class="nav-link navBar-mio" href="./formaParte.html">Formá parte</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <!-- <main class="trabajo">
-            <h3 class="text-center">NUESTROS PROYECTOS</h3>
-            <span class="linea"></span>
-            <h4>Instituto Albert Einstein</h4>
-            <h5>Catamarca 3644, Mar del Plata, Provincia de Buenos Aires</h5>
-            <ul>
-                <li><img src="./img/EINSTEIN01.jpeg" alt=""></li>
-                <li><img src="./img/IMG_0802.jpeg" alt=""></li>
-                <li><img src="./img/IMG_0803.jpeg" alt=""></li>
-                <li><img src="./img/EINSTEIN02.jpeg" alt=""></li>
-                <li><img src="./img/EINSTEIN03.jpeg" alt=""></li>
-            </ul>
-    
-            <h4>Lote 52, Las Lomas, barrio privado Rumencó</h4>
-            <h5>Av. Jorge Newbery, 4550, Mar del Plata, Buenos Aires</h5>
-            <ul>
-                <li><img src="./img/lote52.jpeg" alt=""></li>
-                <li><img src="./img/lote52.jpeg" alt=""></li>
-                <li><img src="./img/lote52.jpeg" alt=""></li>
-                <li><img src="./img/lote52.jpeg" alt=""></li>
-                <li><img src="./img/lote52.jpeg" alt=""></li>
-            </ul>
-    
-            <h4>Lote 84, Los Pinos, barrio privado Rumencó</h4>
-            <h5>Av. Jorge Newbery, 4550, Mar del Plata, Buenos Aires</h5>
-            <ul>
-                <li><img src="./img/lote84.jpeg" alt=""></li>
-                <li><img src="./img/lote82_2.jpeg" alt=""></li>
-            </ul>
-    
-            <h4>Vivienda multifamiliar "Palmas III"</h4>
-            <h5>Matheu 142, Mar del Plata, Buenos Aires</h5>
-            <ul>
-                <li><img src="./img/LaPalmaIII/IMG_0790.jpeg" alt=""></li>
-                <li><img src="./img/LaPalmaIII/laPalma.jpeg" alt=""></li>
-                <li><img src="./img/LaPalmaIII/laPalma3.jpeg" alt=""></li>
-                <li><img src="./img/LaPalmaIII/IMG_0789.jpeg" alt=""></li>
-                <li><img src="./img/LaPalmaIII/laPalmaIII.jpeg" alt=""></li>
-            </ul>
-    
-            <h4>Vivienda multifamiliar "Berona I"</h4>
-            <h5>Aritóbulo del Valle entre Roca y Peña, Mar del Plata, Buenos Aires</h5>
-            <ul>
-                <li><img src="./img/IMG_0816.jpeg" alt=""></li>
-                <li><img src="./img/BeronaI/IMG_0782.jpeg" alt=""></li>
-                <li><img src="./img/IMG_0812.jpeg" alt=""></li>
-                <li><img src="./img/BeronaI/IMG_0783.jpeg" alt=""></li>
-                <li><img src="./img/BeronaI/IMG_0785.jpeg" alt=""></li>
-            </ul>
-    
-        </main> -->
+        <header class="headerMovil">
+            <nav class="navBar-movil navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="logoHeader" src="./img/style/reale sin fondo.png"
+                            alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon toggler-mio"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Reace Albañilería</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav  flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./sobreNosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="./trabajos.html">Trabajos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./formaParte.html">Formá parte</a>
+                                </li>
+
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
         <main class="trabajo">
 
             <h3 class="text-center">NUESTROS TRABAJOS</h3>
@@ -134,12 +129,10 @@
                 <img class="Gallery-image img-fluid" src="./img/rumenco/lote82_2.jpeg" alt="">
                 <img class="Gallery-image img-fluid" src="./img/rumenco/lote84.jpeg" alt="">
             </section>
-            <!-- <div class="text-center boton"> <a class="botContacto" href="./contacto.html">CONTACTANOS</a> </div> -->
+            <div class="text-center boton"> <a class="botContacto" href="./contacto.html">CONTACTANOS</a> </div>
 
             <!-- FORMULARIO DE CONTACTO -->
-            <section class="row d-flex justify-content-center">
-
-                <!-- <p class="offset-lg-3 parrafo">Envianos un mensaje:</p> -->
+            <!-- <section class="row d-flex justify-content-center">
                 <span class="linea"></span>
                 <form class="formContacto col-lg-6 d-flex flex-column " novalidate>
                     <div>
@@ -184,16 +177,15 @@
                     </div>
 
                 </form>
-                <!-- <p class="offset-lg-3 parrafo">También podes contactarte directamente a nuestro email, Instagram o
-                    WhatsApp! -->
-            </section>
+            </section> -->
 
             
         </main>
         <!-- FOOTER -->
         <footer class="footer row">
+            <p class="pFooter text-center">Mar del plata, Buenos Aires</p>
             <img class="logo col-lg-2" src="./img/style/reale sin fondo blanco.png" alt="">
-            <ul class="col-lg-10 d-flex justify-content-end align-self-center">
+            <ul class="col-lg-10 d-flex align-self-center">
                 <li><a href="mailto:reacealbanileria@hotmail.com?Subject=Consulta%20via%20web"><img
                             src="./img/style/logoCorreoSinFondo.png" class="logoFooterCorreo" alt=""></a></li>
                 <li><a href="https://instagram.com/reale_constructora?igshid=MzRlODBiNWFlZA==" target=“_blank”><img

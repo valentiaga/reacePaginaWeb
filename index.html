@@ -23,34 +23,77 @@
   <!-- encabezado -->
 
   <section class="container-fluid">
-    <header class="row" id="header_index">
-      <img class="logo col-lg-2" src="./img/style/reale sin fondo.png" alt="">
+    <header class="row headerWeb">
+      <img class="logoHeader col-lg-2" src="./img/style/reale sin fondo.png" alt="">
       <nav class="col-lg-10 align-self-center">
         <ul class="nav nav-underline justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            <a class="nav-link active navBar-mio" aria-current="page" href="./index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Contacto</a>
+            <a class="nav-link navBar-mio" href="./contacto.html">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./trabajos.html">Trabajos</a>
+            <a class="nav-link navBar-mio" href="./trabajos.html">Trabajos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./servicios.html">Servicios</a>
+            <a class="nav-link navBar-mio" href="./servicios.html">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./sobreNosotros.html">Nosotros</a>
+            <a class="nav-link navBar-mio" href="./sobreNosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./formaParte.html">Formá parte</a>
+            <a class="nav-link navBar-mio" href="./formaParte.html">Formá parte</a>
           </li>
         </ul>
       </nav>
     </header>
 
+    <header class="headerMovil">
+      <nav class="navBar-movil navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logoHeader" src="./img/style/reale sin fondo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon toggler-mio"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Reace Albañilería</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav  flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./sobreNosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./trabajos.html">Trabajos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./formaParte.html">Formá parte</a>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <!--contenido central-->
-    <main class="row" id="index_main">
+    <main  id="index_main">
       <h1 class="text-center">REALE CONSTRUCTORA S.A.</h1>
       <h2 class="text-center">Sentite acompañado y guiado profesionalmente desde el inicio hasta el fin de la obra</h2>
       <p class="text-center wrapper">
@@ -71,19 +114,19 @@
       <span class="linea"></span>
 
       <!-- Carrusel con intervalo -->
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleInterval" class="carousel slide carruselWeb" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
+          <div class="carousel-item item-mio active" data-bs-interval="3000">
             <ul class="d-flex justify-content-around">
-              <li><img src="./img/logotiposClientes/IAE.jpeg" class="d-block " alt="..."></li>
-              <li><img src="./img/logotiposClientes/logoRumenco.webp" class="d-block " alt=""></li>
-              <li><img src="./img/logotiposClientes/logoLaPalma.png" class="d-block " alt=""></li>
+              <li><img src="./img/logotiposClientes/IAE.jpeg" class="d-block img-fluid" alt="..."></li>
+              <li><img src="./img/logotiposClientes/logoRumenco.webp" class="d-block img-fluid" alt=""></li>
+              <li><img src="./img/logotiposClientes/logoLaPalma.png" class="d-block img-fluid" alt=""></li>
               <li><img src="./img/logotiposClientes/cuarzurEdificios.jpeg" class="d-block " alt=""></li>
               <li><img src="./img/logotiposClientes/costaGalana.png" alt=""></li>
               <li><img src="./img/logotiposClientes/casinoCentral.jpeg" class="d-block" alt="..."></li>
             </ul>
           </div>
-          <div class="carousel-item" data-bs-interval="3000">
+          <div class="carousel-item item-mio" data-bs-interval="2000">
             <ul class="d-flex justify-content-around">
               <li> <img src="./img/logotiposClientes/viaAppia.png" class="d-block " alt="..."></li>
               <li><img src="./img/logotiposClientes/deDiosRep.jpeg" class="d-block " alt=""></li>
@@ -104,12 +147,57 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <!-- Carrusel con intervalo movil-->
+      <div id="carouselExampleInterval" class="carousel slide carruselMovil" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item item-mio active" data-bs-interval="5000">
+            <ul class="d-flex justify-content-around">
+              <li><img src="./img/logotiposClientes/IAE.jpeg" class="d-block " alt="..."></li>
+              <li><img src="./img/logotiposClientes/logoRumenco.webp" class="d-block " alt=""></li>
+              <li><img src="./img/logotiposClientes/logoLaPalma.png" class="d-block " alt=""></li>
+            </ul>
+          </div>
+          <div class="carousel-item item-mio" data-bs-interval="4000">
+            <ul class="d-flex justify-content-around">
+              <li><img src="./img/logotiposClientes/cuarzurEdificios.jpeg" class="d-block " alt=""></li>
+              <li><img src="./img/logotiposClientes/costaGalana.png" alt=""></li>
+              <li><img src="./img/logotiposClientes/casinoCentral.jpeg" class="d-block" alt="..."></li>
+            </ul>
+          </div>
+          
+          <div class="carousel-item item-mio" data-bs-interval="2000">
+            <ul class="d-flex justify-content-around">
+              <li> <img src="./img/logotiposClientes/viaAppia.png" class="d-block " alt="..."></li>
+              <li><img src="./img/logotiposClientes/logoRumencoJoven.png" class="d-block " alt=""> </li>
+            </ul>
+          </div>
+          <div class="carousel-item item-mio" data-bs-interval="2000">
+            <ul class="d-flex justify-content-around">
+              <li><img src="./img/logotiposClientes/deDiosRep.jpeg" class="d-block " alt=""></li>
+              <li><img src="./img/logotiposClientes/logoHavanna.gif" class="d-block " alt=""></li>
+              <li><img src="./img/logotiposClientes/coomarpes.jpeg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
     <div class="text-center"> <a class="botContacto" href="./sobreNosotros.html">CONOCENOS</a> </div>
 
     <footer class="footer row">
-      <img class="logo col-lg-2" src="./img/style/reale sin fondo blanco.png" alt="">
-      <ul class="col-lg-10 d-flex justify-content-end align-self-center">
+      <p class="pFooter text-center">Mar del plata, Buenos Aires</p>
+      <img class="logo col-lg-2 text-center" src="./img/style/reale sin fondo blanco.png" alt="">
+      <ul class="col-lg-10 d-flex align-self-center">
         <li><a href="mailto:reacealbanileria@hotmail.com?Subject=Consulta%20via%20web"><img
               src="./img/style/logoCorreoSinFondo.png" class="logoFooterCorreo" alt=""></a></li>
         <li><a href="https://instagram.com/reale_constructora?igshid=MzRlODBiNWFlZA==" target=“_blank”><img

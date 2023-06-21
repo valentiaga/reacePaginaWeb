@@ -47,17 +47,18 @@ h5 {
 #index_main {
     background-image: url(../img/style/index3.jpeg);
     /* background-image: url(../img/style/nuevoFondo0.jpeg); */
-    width: 100%;
+    /* width: 100%; */
     /* background-size: cover; */
-    background-position: 50%50%;
+    /* background-position: 50%50%; */
     padding-top: 7%;
     padding-bottom: 10%;
+    
 }
 
 body {
     background-image: url(../img/style/grisClaro0.jpeg);
     position: relative;
-    padding-top: 120px;
+    padding-top: 110px;
     padding-bottom: 120px;
     /* para que no me tape contenido el footer ; */
 }
@@ -65,8 +66,6 @@ body {
 #bodyNosotros {
     background-image: url(../img/style/nuevoFondo0.jpeg);
     background-size: cover;
-    /* display: flex;
-    flex-flow: column wrap; */
 }
 
 
@@ -77,17 +76,22 @@ header {
     position: absolute;
     top: 0;
     /* display: flex; */
+    height: 110px;
 }
 
 #header_index {
     background-image: url(../img/grisClaro0.jpeg);
 }
 
-.nav-link {
+.navBar-mio {
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: 'Oswald', sans-serif;
     color: black;
     font-size: 18px;
+}
+
+.headerMovil{
+    display: none;
 }
 
 header nav ul li {
@@ -96,6 +100,13 @@ header nav ul li {
 }
 
 img.logo {
+    padding-left: 10%;
+    height: 100px;
+    padding-top: 0.4%;
+    padding-bottom: 0.4%;
+}
+
+img.logoHeader {
     padding-left: 10%;
     height: 100px;
     padding-top: 0.4%;
@@ -116,12 +127,14 @@ img.logo {
     padding-bottom: 5%;
 }
 
-.carousel-item img {
+.item-mio img {
     height: 90px;
     width: 100%;
     object-fit: cover;
 }
-
+.carruselMovil{
+    display: none;
+}
 
 .linea {
     background: rgba(18, 64, 142, 0.938);
@@ -185,6 +198,8 @@ img.logo {
     margin: 10px;
 }
 
+
+/* 
 @media screen and (min-width: 400px) {
     .Gallery {
         width: 80%;
@@ -201,13 +216,8 @@ img.logo {
     .Gallery-article:nth-child(even) {
         margin-left: var(--gutter);
     }
-}
+} */
 
-@media screen and (min-width: 920px) {
-    .Gallery-article {
-        width: calc((100% / 3)) - var(--gutter));
-    }
-}
 
 /*SERVICIOS*/
 
@@ -323,8 +333,12 @@ img.logo {
 .footer ul {
     margin-bottom: 0;
     list-style-type: none;
+    justify-content: end;
 }
 
+.pFooter{
+    display: none;
+}
 
 .logoFooter {
     height: 50px;
@@ -360,9 +374,6 @@ img.logo {
 
 
 .formContacto {
-    /* font-family: 'Kanit', sans-serif; */
-    /* font-weight: bolder; */
-    /* width: 50%; */
     padding-top: 4%;
     padding-bottom: 4%;
     font-size: 17px;
@@ -388,4 +399,109 @@ img.logo {
     width: 100%;
     padding-top: 2%;
     padding-bottom: 8%;
+}
+
+
+@media screen and (max-width: 576px) {
+    header {
+        justify-content: center;
+        height: auto;
+    }
+    .footer{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+    }
+    .footer ul{
+        justify-content: center; 
+        padding-top: 20px;
+    }
+    img.logo{
+        padding-left: 0px;
+        padding-right: 0px;
+        width: auto;
+    }
+    .pFooter{
+       display: block; 
+       color: white;
+    }
+    body{
+        padding-top: 86px;
+        padding-bottom: 370px;
+    }
+    #bodyNosotros{
+        padding-top: 86px;
+        padding-bottom: 370px;
+    }
+    .mainNosotros p {
+        font-size: 15px;
+    }
+    .formContacto {
+        font-size: 13px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .formulario{
+        font-size: 13px;
+    }
+    .headerWeb{
+        display: none;
+    }
+
+    .headerMovil{
+        display: block;
+    }
+    .navBar-movil{
+        background-image: url(../img/style/grisClaro.jpeg);
+    }
+    img.logoHeader{
+        height: 60px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 20px;
+    }
+  
+    h4{
+        font-size: 15px;
+    }
+    .linea{
+        height: 2px;
+        width: 50%;
+        left: 25%;
+    }
+    .pServicio{
+        font-size: 15px;
+    }
+    .texto{
+        font-size: 15px;
+    }
+    .wrapper{
+        font-size: 15px;
+    }
+    .carruselWeb{
+        display: none;
+    }
+    .carruselMovil{
+        display: block;
+    }
+    .item-mio img {
+        height: 70px;
+        width: 100%;
+        object-fit: contain;
+    }
+    .Gallery-image {
+        width: 130px;
+        height: 100%;
+        vertical-align: top;
+        object-fit: cover;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        margin: 10px;
+    }
 }
