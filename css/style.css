@@ -6,7 +6,6 @@
 .wrapper {
     width: 60%;
     margin: auto;
-    /* overflow: hidden; */
     font-size: 20px;
     padding-top: 10px;
     font-family: 'Kanit', sans-serif;
@@ -248,6 +247,7 @@ img.logoHeader {
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
+
 .texto:hover {
     font-weight: bold;
 }
@@ -367,17 +367,39 @@ img.logoHeader {
 /* FORMA PARTE */
 
 .formulario {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     padding-top: 25px;
     padding-bottom: 25px;
+    font-size: 18px;
+
 }
 
 
 .formContacto {
     padding-top: 4%;
     padding-bottom: 4%;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+.lineaContacto{
     font-size: 17px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+.miFormControl:focus{
+    box-shadow: 0 0 0 0.2rem rgba(173, 183, 225, 0.25);
+    border: 0px;
+}
+
+.miBoton {
+    background-color: rgba(18, 64, 142, 0.938);
+    color: #ffffff;
+    border: 1px solid rgba(18, 64, 142, 0.938);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
 }
 
 .input-group {
@@ -438,12 +460,27 @@ img.logoHeader {
     .mainNosotros p {
         font-size: 15px;
     }
-    .formContacto {
+    .formContacto, .miFormControl {
         font-size: 13px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* font-family: 'Kanit', sans-serif; */
+        /* font-family: 'Oswald', sans-serif; */
+
+    }
+    .miBoton {
+        padding: 3px 10px;
+        font-size: 13px;
+    }
+    .miInputMensaje{
+        font-size: 13px;
+    }
+   
+    .lineaContacto{
+        font-size: 13px;
+        font-family: 'Oswald', sans-serif;
     }
     .formulario{
         font-size: 13px;
+        /* font-family: 'Kanit', sans-serif; */
     }
     .headerWeb{
         display: none;
