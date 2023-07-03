@@ -166,7 +166,7 @@ img.logoHeader {
 }
 
 .content_img {
-    
+
     margin: 1em 0;
     position: relative;
 }
@@ -187,13 +187,8 @@ img.logoHeader {
 
 
 .Gallery-image {
-    /* position: relative; */
-    /* width: 300px;
-    height: 100%; */
     max-height: 460px;
-    /* right: 0%; */
     bottom: 0;
-    /* vertical-align: top; */
     object-fit: cover;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
@@ -229,9 +224,17 @@ img.logoHeader {
     font-family: 'Kanit', sans-serif;
 }
 
+
 .boton {
     padding-top: 30px;
     padding-bottom: 30px;
+    transition: all 1s;
+}
+
+.boton:hover {
+    /* transform: scale(1.2); */
+    transform: scale(1.6, 1);
+    
 }
 
 .Gallery {
@@ -240,34 +243,6 @@ img.logoHeader {
     row-gap: 10px;
 }
 
-/* .Gallery-image:hover {
-    filter: blur(1px);
-    border: 1px solid rgba(140, 140, 141, 0.938);
-} */
-
-
-
-
-
-
-/* 
-@media screen and (min-width: 400px) {
-    .Gallery {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 620px) {
-    .Gallery-article {
-        width: calc((100% / 2) - var(--gutter));
-    }
-
-    .Gallery-article:nth-child(even) {
-        margin-left: var(--gutter);
-    }
-} */
 
 
 /*SERVICIOS*/
@@ -290,6 +265,7 @@ img.logoHeader {
     background-image: url(../img/style/albanileria2.jpeg);
     background-size: cover;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+   
 }
 
 .imagenF {
@@ -302,6 +278,7 @@ img.logoHeader {
 
 .texto:hover {
     font-weight: bold;
+    transition: all 1.4s;
 }
 
 .texto:hover+.imagen {
@@ -397,7 +374,11 @@ img.logoHeader {
     width: auto;
     padding-left: 10px;
     padding-right: 30px;
+    transition: 0.5s;
 }
+.logoFooter:hover {
+    transform: scale(1.2);
+ }
 
 .logoFooterCorreo {
     padding-left: 10px;
@@ -405,6 +386,10 @@ img.logoHeader {
     padding-top: 15px;
     height: 36px;
     width: auto;
+    transition: 0.5s;
+}
+.logoFooterCorreo:hover {
+   transform: scale(1.2);
 }
 
 .parrafo {
