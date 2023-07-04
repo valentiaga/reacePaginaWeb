@@ -2,16 +2,16 @@
     p {
         text-align: center;
         padding-top: nth($list: $size, $n: 5);
-        font-size: large;
-        font-family: 'Kanit', sans-serif;
+        // font-size: large;
+        // font-family: 'Kanit', sans-serif;
+        @include fontMixin (large, ('Kanit', sans-serif));
         font-weight: bold;
     }
 }
 
 .mainNosotros {
     width: 100%;
-    padding-top: 2%;
-    padding-bottom: 8%;
+    @include padd-V (2%, 8%);
 }
 
 

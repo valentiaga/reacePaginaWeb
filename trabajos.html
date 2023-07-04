@@ -31,9 +31,6 @@
                         <a class="nav-link navBar-mio" href="./index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navBar-mio" href="./contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link active navBar-mio" aria-current="page" href="./trabajos.html">Trabajos</a>
                     </li>
                     <li class="nav-item">
@@ -44,6 +41,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navBar-mio" href="./formaParte.html">Formá parte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navBar-mio" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -99,7 +99,8 @@
             <h3 class="text-center">NUESTROS TRABAJOS</h3>
             <span class="linea"></span>
             <h4>Viviendas multifamiliares</h4>
-            <section class="row text-center">
+            <section class="row text-center justify-content-center">
+
                 <div class="content_img col-lg-3 col-4">
                     <div>
                         <img class="img-fluid" src="./img/Avellaneda/ave1.jpeg" alt="">
@@ -129,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content_img col-lg-3 col-4">
+                <div class="content_img col-lg-3 col-4 divCuartaImgVM">
                     <div>
                         <img class="img-fluid" src="./img/BeronaI/berona4.jpeg" alt="">
                     </div>
@@ -139,163 +140,193 @@
                     </div>
 
                 </div>
-                <div class="content_img col-lg-3 col-4">
-                    <div>
-                        <img class="img-fluid" src="./img/BeronaI/berona5.jpeg" alt="">
-                    </div>
 
-                    <div class="img-text">
-                        Berona I
-                    </div>
+                <!-- BOTON MOBILE -->
+                <!-- <button class=" miBotonGaleria col-lg-2 col-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Mostrar más
+                </button> -->
+                <input type="checkbox" id="collapseCheckboxVM">
+                <label for="collapseCheckboxVM" class="miBotonGaleria col-lg-2 col-2">Mostrar más</label>
+                <div class="collapse miCollapseVM row text-center justify-content-center" id="collapseExample">
+                    <div class="content_img col-lg-3 col-4 divPrimeraImagenVM">
+                        <div>
+                            <img class="img-fluid" src="./img/BeronaI/berona4.jpeg" alt="">
+                        </div>
 
-                </div>
-                <div class="content_img col-lg-3 col-4 text">
-                    <div>
-                        <img class="img-fluid" src="./img/LaPalmaIII/lapalma.jpeg" alt="">
-                    </div>
+                        <div class="img-text">
+                            Berona I
+                        </div>
 
-                    <div class="img-text">
-                        La Palma III
                     </div>
+                    <div class="content_img col-lg-3 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/BeronaI/berona5.jpeg" alt="">
+                        </div>
 
-                </div>
-                <div class="content_img col-lg-3 col-4">
-                    <div>
-                        <img class="img-fluid" src="./img/LaPalmaIII/lapalma1.jpeg" alt="">
-                    </div>
+                        <div class="img-text">
+                            Berona I
+                        </div>
 
-                    <div class="img-text">
-                        La Palma III
                     </div>
+                    <div class="content_img col-lg-3 col-4 text">
+                        <div>
+                            <img class="img-fluid" src="./img/LaPalmaIII/lapalma.jpeg" alt="">
+                        </div>
 
-                </div>
-                <div class="content_img col-lg-3 col-4">
-                    <div>
-                        <img class="img-fluid" src="./img/LaPalmaIII/lapalma2.jpeg" alt="">
-                    </div>
+                        <div class="img-text">
+                            La Palma III
+                        </div>
 
-                    <div class="img-text">
-                        La Palma III
                     </div>
+                    <div class="content_img col-lg-3 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/LaPalmaIII/lapalma1.jpeg" alt="">
+                        </div>
 
-                </div>
-                <div class="content_img col-lg-3 col-4">
-                    <div>
-                        <img class="img-fluid" src="./img/LaPalmaIII/laPalmaa.jpeg" alt="">
-                    </div>
+                        <div class="img-text">
+                            La Palma III
+                        </div>
 
-                    <div class="img-text">
-                        La Palma III
                     </div>
+                    <div class="content_img col-lg-3 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/LaPalmaIII/lapalma2.jpeg" alt="">
+                        </div>
 
-                </div>
-                <div class="content_img col-lg-3 col-4">
-                    <div>
-                        <img class="img-fluid" src="./img/catamarca/Catamarca.jpeg" alt="">
-                    </div>
+                        <div class="img-text">
+                            La Palma III
+                        </div>
 
-                    <div class="img-text">
-                        Catamarca
                     </div>
+                    <div class="content_img col-lg-3 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/LaPalmaIII/laPalmaa.jpeg" alt="">
+                        </div>
 
-                </div>
-                <div class="content_img col-lg-3 col-4">
-                    <div>
-                        <img class="img-fluid" src="./img/pringles/pringles1.jpeg" alt="">
-                    </div>
+                        <div class="img-text">
+                            La Palma III
+                        </div>
 
-                    <div class="img-text">
-                        Pringles
                     </div>
+                    <div class="content_img col-lg-3 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/catamarca/Catamarca.jpeg" alt="">
+                        </div>
 
-                </div>
-                <div class="content_img col-lg-3 col-4">
-                    <div>
-                        <img class="img-fluid" src="./img/pringles/pringles4.jpeg" alt="">
+                        <div class="img-text">
+                            Catamarca
+                        </div>
+
                     </div>
-                    <div>
+                    <div class="content_img col-lg-3 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/pringles/pringles1.jpeg" alt="">
+                        </div>
+
                         <div class="img-text">
                             Pringles
                         </div>
+
                     </div>
+                    <div class="content_img col-lg-3 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/pringles/pringles4.jpeg" alt="">
+                        </div>
+                        <div>
+                            <div class="img-text">
+                                Pringles
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_img col-lg-3 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/pringles/pringles4.jpeg" alt="">
+                        </div>
+
+                        <div class="img-text">
+                            Pringles
+                        </div>
+
+                    </div>
+                    <div class="content_img col-lg-3 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/rioja.jpeg" alt="">
+                        </div>
+
+                        <div class="img-text">
+                            La Rioja
+                        </div>
+
+                    </div>
+                    <div class="content_img col-lg-3 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/rioja2.jpeg" alt="">
+                        </div>
+
+                        <div class="img-text">
+                            La Rioja
+                        </div>
+
+                    </div>
+                    <div class="content_img col-lg-4 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/BeronaI/berona1.jpeg" alt="">
+                        </div>
+
+                        <div class="img-text">
+                            Berona I
+                        </div>
+
+                    </div>
+                    <div class="content_img col-lg-4 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/BeronaI/berona2.jpeg" alt="">
+                        </div>
+
+                        <div class="img-text">
+                            Berona I
+                        </div>
+
+                    </div>
+                    <div class="content_img col-lg-4 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/LaPalmaIII/lapalma4.jpeg" alt="">
+                        </div>
+
+                        <div class="img-text">
+                            La Palma III
+                        </div>
+
+                    </div>
+                    <div class="content_img col-lg-4 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/pringles/pringles2.jpeg" alt="">
+                        </div>
+
+                        <div class="img-text">
+                            Pringles
+                        </div>
+
+                    </div>
+                    <div class="content_img col-lg-4 col-4">
+
+                    </div>
+                    <div class="content_img col-lg-4 col-4">
+
+                    </div>
+                    <!-- <button class=" miBotonGaleria col-lg-2 col-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Mostrar menos
+                    </button> -->
+                    <!-- <input type="checkbox" id="collapseCheckboxVM "> -->
+                    <label for="collapseCheckboxVM" class="miBotonGaleria col-lg-2 col-3">Mostrar menos</label>
                 </div>
-
-                <div class="content_img col-lg-3 col-4">
-                    <div>
-                        <img class="img-fluid" src="./img/pringles/pringles4.jpeg" alt="">
-                    </div>
-
-                    <div class="img-text">
-                        Pringles
-                    </div>
-
-                </div>
-                <div class="content_img col-lg-3 col-4">
-                    <div>
-                        <img class="img-fluid" src="./img/rioja.jpeg" alt="">
-                    </div>
-
-                    <div class="img-text">
-                        La Rioja
-                    </div>
-
-                </div>
-                <div class="content_img col-lg-3 col-4">
-                    <div>
-                        <img class="img-fluid" src="./img/rioja2.jpeg" alt="">
-                    </div>
-
-                    <div class="img-text">
-                        La Rioja
-                    </div>
-
-                </div>
-                <div class="content_img col-lg-4 col-4">
-                    <div>
-                        <img class="img-fluid" src="./img/BeronaI/berona1.jpeg" alt="">
-                    </div>
-
-                    <div class="img-text">
-                        Berona I
-                    </div>
-
-                </div>
-                <div class="content_img col-lg-4 col-4">
-                    <div>
-                        <img class="img-fluid" src="./img/BeronaI/berona2.jpeg" alt="">
-                    </div>
-
-                    <div class="img-text">
-                        Berona I
-                    </div>
-
-                </div>
-                <div class="content_img col-lg-4 col-4">
-                    <div>
-                        <img class="img-fluid" src="./img/LaPalmaIII/lapalma4.jpeg" alt="">
-                    </div>
-
-                    <div class="img-text">
-                        La Palma III
-                    </div>
-
-                </div>
-                <div class="content_img col-lg-4 col-4">
-                    <div>
-                        <img class="img-fluid" src="./img/pringles/pringles2.jpeg" alt="">
-                    </div>
-
-                    <div class="img-text">
-                        Pringles
-                    </div>
-
-                </div>
-                <!-- <img class="Gallery-image img-fluid" src="./img/LaPalmaIII/lapalma3.jpeg" alt=""> -->
-                <!-- <img class="Gallery-image img-fluid" src="./img/pringles/pringles3.jpeg" alt=""> -->
 
             </section>
             <h4>Viviendas unifamiliares</h4>
-            <section class="row">
+            <section class="row text-center justify-content-center">
                 <div class="content_img col-lg-4 col-4">
                     <div>
                         <img class="img-fluid" src="./img/rumenco/lote52.jpeg" alt="">
@@ -319,6 +350,96 @@
                     <div class="img-text col-lg-6 text-center">
                         Rumenco - Lote 84
                     </div>
+                </div>
+
+                <!-- cuarta imagen -->
+
+                <!-- BOTON MOSTRAR MAS -->
+                <!-- <button class=" miBotonGaleria col-lg-2 col-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                    Mostrar más
+                </button> -->
+                <input type="checkbox" id="collapseCheckboxVU">
+                <label for="collapseCheckboxVU" class="miBotonGaleria col-lg-2 col-2">Mostrar más</label>
+
+                <div class="collapse miCollapseVU row text-center justify-content-center" id="collapseExample">
+                    <div class="content_img col-lg-4 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/rumenco/lote52.jpeg" alt="">
+                        </div>
+                        <div class="img-text col-lg-6 text-center">
+                            Rumenco - Lote 52
+                        </div>
+                    </div>
+                    <div class="content_img col-lg-4 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/rumenco/lote82_2.jpeg" alt="">
+                        </div>
+                        <div class="img-text col-lg-6 text-center">
+                            Rumenco - Lote 84
+                        </div>
+                    </div>
+                    <div class="content_img col-lg-4 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/rumenco/lote84.jpeg" alt="">
+                        </div>
+                        <div class="img-text col-lg-6 text-center">
+                            Rumenco - Lote 84
+                        </div>
+                    </div>
+                    <div class="content_img col-lg-4 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/rumenco/lote52.jpeg" alt="">
+                        </div>
+                        <div class="img-text col-lg-6 text-center">
+                            Rumenco - Lote 52
+                        </div>
+                    </div>
+                    <div class="content_img col-lg-4 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/rumenco/lote82_2.jpeg" alt="">
+                        </div>
+                        <div class="img-text col-lg-6 text-center">
+                            Rumenco - Lote 84
+                        </div>
+                    </div>
+                    <div class="content_img col-lg-4 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/rumenco/lote84.jpeg" alt="">
+                        </div>
+                        <div class="img-text col-lg-6 text-center">
+                            Rumenco - Lote 84
+                        </div>
+                    </div>
+                    <div class="content_img col-lg-4 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/rumenco/lote52.jpeg" alt="">
+                        </div>
+                        <div class="img-text col-lg-6 text-center">
+                            Rumenco - Lote 52
+                        </div>
+                    </div>
+                    <div class="content_img col-lg-4 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/rumenco/lote82_2.jpeg" alt="">
+                        </div>
+                        <div class="img-text col-lg-6 text-center">
+                            Rumenco - Lote 84
+                        </div>
+                    </div>
+                    <div class="content_img col-lg-4 col-4">
+                        <div>
+                            <img class="img-fluid" src="./img/rumenco/lote84.jpeg" alt="">
+                        </div>
+                        <div class="img-text col-lg-6 text-center">
+                            Rumenco - Lote 84
+                        </div>
+                    </div>
+                    <!-- <button class=" miBotonGaleria col-lg-2 col-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                        Mostrar menos
+                    </button> -->
+                    <!-- <input type="checkbox" id="collapseCheckboxVU"> -->
+                    <label for="collapseCheckboxVU" class="miBotonGaleria col-lg-2 col-3">Mostrar menos</label>
                 </div>
             </section>
             <div class="text-center boton"> <a class="botContacto" href="./contacto.html">CONTACTANOS</a> </div>

@@ -17,8 +17,7 @@ header {
     nav {
         ul {
             li {
-                padding-left: 3px;
-                padding-right: nth($list: $size, $n: 5);
+                @include padd-H (3px, nth($list: $size, $n: 5));
                 .navBar-mio {
                     font-family: 'Oswald', sans-serif;
                     color: black;

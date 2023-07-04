@@ -2,15 +2,9 @@
     @extend %form;
     padding-top: 30px;
 }
-// .mainContacto{
-//     position: relative;
-// }
-.sectionContacto{
 
-    position: relative;
-    // left: 50%;
-    // transform: translate(-50%,-50%);
-    
+.sectionContacto{
+    position: relative; 
 }
 .formContacto {
     @extend %form;
@@ -28,13 +22,16 @@
     position: absolute;
     top:190%;
     transform: translate(0,-50%);
-    font-size: nth($list: $size, $n: 8);
-    font-family: 'Oswald', sans-serif;
+    @include fontMixin (nth($list: $size, $n: 8), ('Oswald', sans-serif));
+
+    // font-size: nth($list: $size, $n: 8);
+    // font-family: 'Oswald', sans-serif;
     
 }
 
 .imgContacto{
    opacity: 0.4;
+   margin-top: 90px;
 }
 
 .divImagenContacto{
@@ -62,8 +59,10 @@
 
 .input-group {
     height: 120px;
-    padding-top: nth($list: $size, $n: 2);
-    padding-bottom: nth($list: $size, $n: 4);
+    @include padd-V (nth($list: $size, $n: 2), nth($list: $size, $n: 4));
+
+    // padding-top: nth($list: $size, $n: 2);
+    // padding-bottom: nth($list: $size, $n: 4);
 }
 .inputArchivo{
     padding-bottom: 30px;
