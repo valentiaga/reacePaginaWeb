@@ -1,0 +1,19 @@
+.mainNosotros p {
+    text-align: center;
+    padding-top: 30px;
+    font-size: large;
+    font-family: 'Kanit', sans-serif;
+}
+
+.mainNosotros {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 8%;
+}
+
+
+@media screen and (max-width: 576px) {
+    .mainNosotros p {
+        font-size: 15px;
+    }
+}

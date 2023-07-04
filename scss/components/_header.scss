@@ -1,0 +1,68 @@
+header {
+    width: 100%;
+    background-image: url(../img/style/grisClaro.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    height: 110px;
+}
+
+img.logoHeader {
+    padding-left: 10%;
+    height: 100px;
+    align-self: center;
+    // padding-top: 0.4%;
+    // padding-bottom: 0.4%;
+}
+
+header {
+    nav {
+        ul {
+            li {
+                padding-left: 3px;
+                padding-right: 30px;
+                .navBar-mio {
+                    font-family: 'Oswald', sans-serif;
+                    color: black;
+                    font-size: 18px;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+#header_index {
+    background-image: url(../img/grisClaro0.jpeg);
+}
+
+.headerMovil {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1070px) {
+    header {
+        justify-content: center;
+        height: auto;
+    }
+
+    .headerWeb {
+        display: none;
+    }
+
+    .headerMovil {
+        display: block;
+    }
+
+    .navBar-movil {
+        background-image: url(../img/style/grisClaro.jpeg);
+    }
+
+    img.logoHeader {
+        height: 60px;
+    }
+}
+
