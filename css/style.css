@@ -76,6 +76,8 @@ img.logo {
 
 .footerContacto {
   height: 130px;
+  position: absolute;
+  top: 160%;
 }
 
 .pFooter {
@@ -89,7 +91,7 @@ img.logo {
   padding-right: 20px;
   transition: 0.5s;
 }
-.logoFooterhover {
+.logoFooter:hover {
   transform: scale(1.2);
 }
 
@@ -101,7 +103,7 @@ img.logo {
   width: auto;
   transition: 0.5s;
 }
-.logoFooterCorreohover {
+.logoFooterCorreo:hover {
   transform: scale(1.2);
 }
 
@@ -116,6 +118,10 @@ img.logo {
   .footer ul {
     justify-content: center;
     padding-top: 15px;
+  }
+  .footerContacto {
+    position: absolute;
+    top: 110%;
   }
   img.logo {
     padding-left: 0px;
@@ -157,7 +163,7 @@ body {
   padding-bottom: 30px;
   transition: all 1s;
 }
-.botonhover {
+.boton:hover {
   transform: scale(1.6, 1);
 }
 
@@ -284,14 +290,37 @@ h5 {
   padding-top: 30px;
 }
 
+.sectionContacto {
+  position: relative;
+}
+
 .formContacto {
-  padding-top: 80px;
+  padding-top: 40px;
+  border: 1px solid rgba(18, 64, 142, 0.938);
+  position: absolute;
+  background-color: rgba(254, 253, 253, 0.361);
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -15%);
 }
 
 .lineaContacto {
+  position: absolute;
+  top: 190%;
+  transform: translate(0, -50%);
   font-size: 17px;
   font-family: "Oswald", sans-serif;
-  padding-bottom: 80px;
+}
+
+.imgContacto {
+  opacity: 0.4;
+}
+
+.divImagenContacto {
+  height: 500px;
+  background: rgb(18, 64, 142);
+  background: linear-gradient(0deg, rgba(18, 64, 142, 0.01) 0%, rgba(18, 64, 142, 0.01) 8%, rgba(41, 97, 182, 0.9262298669) 69%, rgb(17, 59, 131) 99%);
+  background-size: cover;
 }
 
 .miFormControl:focus {
@@ -314,10 +343,18 @@ h5 {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 576px) {
+.inputArchivo {
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
   .formContacto,
   .miFormControl {
     font-size: 13px;
+  }
+  .formContacto {
+    transform: translate(-50%, -10%);
+    border: 2px solid rgba(18, 64, 142, 0.938);
   }
   .miBoton {
     padding: 3px 10px;
@@ -327,8 +364,10 @@ h5 {
     font-size: 13px;
   }
   .lineaContacto {
-    font-size: 13px;
-    font-family: "Oswald", sans-serif;
+    display: none;
+  }
+  .imgContacto {
+    height: auto;
   }
   .formulario {
     font-size: 13px;
@@ -412,6 +451,7 @@ h5 {
   padding-top: 30px;
   font-size: large;
   font-family: "Kanit", sans-serif;
+  font-weight: bold;
 }
 
 .mainNosotros {

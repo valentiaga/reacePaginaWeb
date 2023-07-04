@@ -10,6 +10,7 @@ body {
     padding-bottom: 120px;
 }
 
+
 #bodyNosotros {
     background-image: url(../img/style/nuevoFondo0.jpeg);
     background-size: cover;
@@ -28,7 +29,7 @@ body {
     padding-top: nth($list: $size, $n: 5);
     padding-bottom: nth($list: $size, $n: 5);
     transition: all 1s;
-    &hover{
+    &:hover{
         transform: scale(1.6, 1);
     }
 }
