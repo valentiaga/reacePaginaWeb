@@ -11,36 +11,23 @@
         bottom: 0;
         object-fit: cover;
         box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        &:hover {
+            filter: blur(1px);
+            border: 1px solid rgba(140, 140, 141, 0.938);
+        }
     }
-}
-
-.content_img:hover {
-    img {
-        filter: blur(1px);
-        border: 1px solid rgba(140, 140, 141, 0.938);
-    }
-
-    .img-text {
-        padding: 8px 10px;
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-
-.trabajo {
-    background-image: url(../img/style/grisClaro0.jpeg);
-}
-
-.trabajo {
-    section {
-        padding-bottom: 3%;
+    &:hover {
+        .img-text {
+            padding: 8px 10px;
+            visibility: visible;
+            opacity: 1;
+        }
     }
 }
 
 .img-text {
     position: absolute;
-    bottom: 10px;
+    bottom: nth($list: $size, $n: 2);
     width: 70%;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -55,8 +42,30 @@
     -webkit-transition: visibility 0s, opacity 0.5s linear; 
     transition: visibility 0s, opacity 0.5s linear;
     font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+    font-size: nth($list: $size, $n: 5);
 }
+// .content_img:hover {
+//     img {
+//         filter: blur(1px);
+//         border: 1px solid rgba(140, 140, 141, 0.938);
+//     }
+
+//     .img-text {
+//         padding: 8px 10px;
+//         visibility: visible;
+//         opacity: 1;
+//     }
+// }
+
+
+.trabajo {
+    background-image: url(../img/style/grisClaro0.jpeg);
+    section {
+        padding-bottom: 3%;
+    }
+}
+
+
 
 @media screen and (max-width: 576px) {
     
@@ -69,7 +78,7 @@
     }
 
     .img-text {
-        font-size: 15px;
+        font-size: nth($list: $size, $n: 3);
         width: 60%;
     }
 }

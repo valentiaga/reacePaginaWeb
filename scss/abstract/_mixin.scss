@@ -1,0 +1,14 @@
+@mixin fontMixin($f_size, $f_family){
+    font-size: $f_size;
+    font-family: $f_family;
+}
+
+@mixin padd-H ($p-left, $p-right){
+    padding-left: $p-left;
+    padding-right: $p-right;
+}
+
+@mixin padd-V ($p-top, $p-bottom){
+    padding-top: $p-top;
+    padding-bottom: $p-bottom;
+}

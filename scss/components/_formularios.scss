@@ -1,72 +1,63 @@
 .formulario {
-    font-family: 'Oswald', sans-serif;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    padding-top: 25px;
-    padding-bottom: 25px;
-    font-size: 18px;
-
+    @extend %form;
+    padding-top: 30px;
 }
 
 
 .formContacto {
-    padding-top: 4%;
-    padding-bottom: 4%;
-    font-size: 18px;
-    font-family: 'Oswald', sans-serif;
-
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    @extend %form;
+    padding-top: 80px;
 }
 
 .lineaContacto {
-    font-size: 17px;
+    font-size: nth($list: $size, $n: 8);
     font-family: 'Oswald', sans-serif;
     padding-bottom: 80px;
 }
 
 .miFormControl:focus {
     box-shadow: 0 0 0 0.2rem rgba(173, 183, 225, 0.25);
-    border: 0px;
+    border: nth($list: $size, $n: 1);
 }
 
 .miBoton {
-    background-color: rgba(18, 64, 142, 0.938);
+    background-color: $color-ppal;
     color: #ffffff;
-    border: 1px solid rgba(18, 64, 142, 0.938);
+    border: 1px solid $color-ppal;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: nth($list: $size, $n: 2) nth($list: $size, $n: 4);
     font-size: 16px;
 }
 
 
 .input-group {
     height: 120px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: nth($list: $size, $n: 2);
+    padding-bottom: nth($list: $size, $n: 4);
 }
 
 @media screen and (max-width: 576px) {
 
     .formContacto,
     .miFormControl {
-        font-size: 13px;
+        font-size: nth($list: $size, $n: 10);
     }
 
     .miBoton {
         padding: 3px 10px;
-        font-size: 13px;
+        font-size: nth($list: $size, $n: 10);
     }
 
     .miInputMensaje {
-        font-size: 13px;
+        font-size: nth($list: $size, $n: 10);
     }
 
     .lineaContacto {
-        font-size: 13px;
+        font-size: nth($list: $size, $n: 10);
         font-family: 'Oswald', sans-serif;
     }
 
     .formulario {
-        font-size: 13px;
-        /* font-family: 'Kanit', sans-serif; */
+        font-size: nth($list: $size, $n: 10);
     }
 }

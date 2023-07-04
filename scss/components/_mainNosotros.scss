@@ -1,8 +1,10 @@
-.mainNosotros p {
-    text-align: center;
-    padding-top: 30px;
-    font-size: large;
-    font-family: 'Kanit', sans-serif;
+.mainNosotros {
+    p {
+        text-align: center;
+        padding-top: nth($list: $size, $n: 5);
+        font-size: large;
+        font-family: 'Kanit', sans-serif;
+    }
 }
 
 .mainNosotros {
@@ -13,7 +15,9 @@
 
 
 @media screen and (max-width: 576px) {
-    .mainNosotros p {
-        font-size: 15px;
+    .mainNosotros {
+        p {
+            font-size: nth($list: $size, $n: 3);
+        }
     }
 }

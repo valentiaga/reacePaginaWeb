@@ -11,8 +11,6 @@ img.logoHeader {
     padding-left: 10%;
     height: 100px;
     align-self: center;
-    // padding-top: 0.4%;
-    // padding-bottom: 0.4%;
 }
 
 header {
@@ -20,19 +18,17 @@ header {
         ul {
             li {
                 padding-left: 3px;
-                padding-right: 30px;
+                padding-right: nth($list: $size, $n: 5);
                 .navBar-mio {
                     font-family: 'Oswald', sans-serif;
                     color: black;
-                    font-size: 18px;
+                    font-size: nth($list: $size, $n: 11);
                 }
             }
 
         }
     }
 }
-
-
 
 #header_index {
     background-image: url(../img/grisClaro0.jpeg);
@@ -62,7 +58,7 @@ header {
     }
 
     img.logoHeader {
-        height: 60px;
+        height: nth($list: $size, $n: 12);
     }
 }
 

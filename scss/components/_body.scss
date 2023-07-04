@@ -8,7 +8,6 @@ body {
     position: relative;
     padding-top: 110px;
     padding-bottom: 120px;
-    /* para que no me tape contenido el footer ; */
 }
 
 #bodyNosotros {
@@ -20,32 +19,30 @@ body {
     text-decoration: none;
     color: black;
     padding: 8px;
-    border: 1px solid rgba(18, 64, 142, 0.938);
+    border: 1px solid $color-ppal;
     font-family: 'Kanit', sans-serif;
 }
 
 
 .boton {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: nth($list: $size, $n: 5);
+    padding-bottom: nth($list: $size, $n: 5);
     transition: all 1s;
+    &hover{
+        transform: scale(1.6, 1);
+    }
 }
 
-.boton:hover {
-    /* transform: scale(1.2); */
-    transform: scale(1.6, 1);
-    
-}
 
 h1 {
     font-family: 'Oswald', sans-serif;
     font-weight: 900;
-    font-size: 50px;
+    font-size: nth($list: $size, $n: 7);
 }
 
 h2 {
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    // font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -53,13 +50,13 @@ h3 {
     margin-top: 25px;
     font-family: 'Nanum Gothic', sans-serif;
     font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+    font-size: nth($list: $size, $n: 5);
 }
 
 h4 {
     font-family: 'Kanit', sans-serif;
     padding-left: 3%;
-    font-size: 20px;
+    font-size: nth($list: $size, $n: 4);
     margin-top: 25px;
 }
 
@@ -69,7 +66,7 @@ h5 {
 }
 
 .linea {
-    background: rgba(18, 64, 142, 0.938);
+    background: $color-ppal;
     height: 3px;
     width: 70%;
     position: absolute;
@@ -97,19 +94,19 @@ h5 {
     }
 
     h1 {
-        font-size: 25px;
+        font-size: nth($list: $size, $n: 9);
     }
 
     h2 {
-        font-size: 17px;
+        font-size: nth($list: $size, $n: 8);
     }
 
     h3 {
-        font-size: 20px;
+        font-size: nth($list: $size, $n: 4);
     }
 
     h4 {
-        font-size: 15px;
+        font-size: nth($list: $size, $n: 3);
     }
 
 }

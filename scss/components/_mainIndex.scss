@@ -7,8 +7,8 @@
 .wrapper {
     width: 60%;
     margin: auto;
-    font-size: 20px;
-    padding-top: 10px;
+    font-size: nth($list: $size, $n: 4);
+    padding-top: nth($list: $size, $n: 2);
     font-family: 'Kanit', sans-serif;
 }
 
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 576px) {
     .wrapper {
-        font-size: 15px;
+        font-size: nth($list: $size, $n: 3);
     }
 
     .carruselWeb {
