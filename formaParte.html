@@ -87,138 +87,135 @@
     <main>
       <h3 class="text-center">FORMA PARTE</h3>
       <span class="linea"></span>
-      <section class="row d-flex justify-content-center">
+      <section class="row justify-content-center">
 
-        <form class="col-lg-6 d-flex flex-column g-3 needs-validation formulario" novalidate>
-          <div>
-            <label for="validationCustom01" class="form-label">Nombre</label>
-            <input type="text" class="form-control miFormControl" id="validationCustom01" required>
-            <div class="invalid-feedback">
-              Ingrese su nombre.
-            </div>
-          </div>
+        <form class="col-lg-6 d-flex flex-column formulario" action="">
+          <label for="nombreInput" class="form-label">Nombre</label>
+          <input minlength="2" type="text" class="form-control miFormControl" id="nombreInput" required>
 
-          <div>
-            <label for="validationCustom02" class="form-label">Apellido</label>
-            <input type="text" class="form-control miFormControl" id="validationCustom02" required>
-            <div class="invalid-feedback">
-              Ingrese su apellido.
-            </div>
-          </div>
+          <label for="apeInput" class="form-label">Apellido</label>
+          <input minlength="2" type="text" class="form-control miFormControl" id="apeInput" required>
 
-          <div>
-            <label for="validationCustom03" class="form-label">Edad</label>
-            <input type="text" class="form-control miFormControl" id="validationCustom03" required>
-            <div class="invalid-feedback">
-              Ingrese una edad válida.
-            </div>
-          </div>
+          <label for="edadInput" class="form-label">Edad</label>
+          <input type="number" min="0" class="form-control miFormControl" id="edadInput" required>
+
 
           <p>Fecha de nacimiento</p>
-
           <div class="d-flex fechaNac">
+
             <div class="col-lg-4">
-              <label for="validationCustom03" class="form-label">Día</label>
-              <input type="number" class="form-control miFormControl" id="validationCustom03" required>
-              <div class="invalid-feedback">
-                Ingrese día de nacimiento.
-              </div>
+              <label for="diaInput" class="form-label">Día</label>
+              <!-- <input type="number" min="0" class="form-control miFormControl" id="diaInput" required> -->
+              <select class="form-control miFormControl" name="diaInput" id="" required>
+                <option value="" selected disabled hidden></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select>
+              
+            </div>
+            <div class="col-lg-4 d-flex flex-column">
+              <label for="mesInput" class="form-label">Mes</label>
+              <!-- <input type="number" min="0" class="form-control miFormControl" id="mesInput" required> -->
+              <select class="form-control miFormControl" name="mesInput" id="" required>
+                <option value="" selected disabled hidden></option>
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+              </select>
             </div>
             <div class="col-lg-4">
-              <label for="validationCustom03" class="form-label">Mes</label>
-              <input type="number" class="form-control miFormControl" id="validationCustom03" required>
-              <div class="invalid-feedback">
-                Ingrese mes de nacimiento.
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <label for="validationCustom03" class="form-label">Año</label>
-              <input type="number" class="form-control miFormControl" id="validationCustom03" required>
-              <div class="invalid-feedback">
-                Ingrese año de nacimiento.
-              </div>
+              <label for="anoInput" class="form-label">Año</label>
+              <input type="number" min="0" class="form-control miFormControl" id="anoInput" required>
+
             </div>
           </div>
 
-          <div>
-            <label for="validationCustom04" class="form-label">Nacionalidad</label>
-            <input type="text" class="form-control miFormControl" id="validationCustom03" required>
-            <div class="invalid-feedback">
-              Ingrese una nacionalidad válida.
+          <label for="nacInput" class="form-label">Nacionalidad</label>
+          <input type="text" class="form-control miFormControl" id="nacInput" required>
+
+
+          <div class="d-flex">
+            <div class="col-lg-8">
+              <label for="dirInput" class="form-label">Dirección</label>
+              <input type="text" class="form-control miFormControl" id="dirInput" required>
+            </div>
+
+            <div class="col-lg-2">
+              <label for="nroInput" class="form-label">Número</label>
+              <input type="number" class="form-control miFormControl" id="nroInput" required>
+            </div>
+            <div class="col-lg-2">
+              <label for="dptoInput" class="form-label">Departamento</label>
+              <input type="text" class="form-control" id="dptoInput">
             </div>
           </div>
 
           <div class="d-flex">
             <div class="col-lg-8">
-              <label for="validationCustom04" class="form-label">Dirección</label>
-              <input type="text" class="form-control miFormControl" id="validationCustom03" required>
-              <div class="invalid-feedback">
-                Ingrese una dirección válida.
-              </div>
-            </div>
-
-            <div class="col-lg-2">
-              <label for="validationCustom05" class="form-label">Número</label>
-              <input type="number" class="form-control miFormControl" id="validationCustom05" required>
-              <div class="invalid-feedback">
-                Ingrese un número de dirección válido.
-              </div>
-            </div>
-            <div class="col-lg-2">
-              <label for="validationCustom05" class="form-label">Departamento</label>
-              <input type="text" class="form-control" id="validationCustom05">
-            </div>
-          </div>
-
-          <div class="d-flex">
-            <div class="col-lg-8">
-              <label for="validationCustom05" class="form-label">Ciudad</label>
-              <input type="text" class="form-control miFormControl" id="validationCustom05" required>
-              <div class="invalid-feedback">
-                Ingrese ciudad.
-              </div>
+              <label for="ciudadInput" class="form-label">Ciudad</label>
+              <input type="text" class="form-control miFormControl" id="ciudadInput" required>
             </div>
             <div class="col-lg-4">
-              <label for="validationCustom05" class="form-label">Código postal</label>
-              <input type="number" class="form-control miFormControl" id="validationCustom05" required>
-              <div class="invalid-feedback">
-                Ingrese un cóodigo postal válido
-              </div>
+              <label for="codPostalInput" class="form-label">Código postal</label>
+              <input type="number" class="form-control miFormControl" id="codPostalInput" required>
             </div>
           </div>
 
-          <div>
-            <label for="validationCustom05" class="form-label">Provincia</label>
-            <input type="text" class="form-control miFormControl" id="validationCustom05" required>
-            <div class="invalid-feedback">
-              Ingrese provincia.
-            </div>
-          </div>
+          <label for="provInput" class="form-label">Provincia</label>
+          <input type="text" class="form-control miFormControl" id="provInput" required>
 
-          <div>
-            <label for="validationCustom05" class="form-label">Teléfono</label>
-            <input type="number" class="form-control miFormControl" id="validationCustom05" required>
-            <div class="invalid-feedback">
-              Ingrese un número de teléfono o celular válido.
-            </div>
-          </div>
+          <label for="telInput" class="form-label">Teléfono</label>
+          <input type="number" class="form-control miFormControl" id="telInput" required>
 
-          <div>
-            <div class="input-group">
-              <span class="input-group-text miInputMensaje">Experiencia laboral</span>
-              <textarea class="form-control miFormControl"></textarea>
-            </div>
-          </div>
-          <div>
-            <label for="file">Adjuntar cv:</label>
-            <input type="file" id="file" class="inputArchivo" name="file">
-          </div>
-          <div>
-            <button class="offset-lg- col-lg-4 btn btn-primary miBoton offset-4 col-4" type="submit">Enviar
-              formulario</button>
-          </div>
+          <label for="expInput" class="form-label">Experiencia Laboral</label>
+          <textarea class="form-control miFormControl" name="" id="expInput" cols="30" rows="5"></textarea>
+          <!-- <input type="text" class="form-control miFormControl" id="expInput"> -->
 
+          <label for="file">Adjuntar cv:</label>
+          <input type="file" id="file" class="inputArchivo" name="file">
+
+          <button class="offset-lg- col-lg-4 btn btn-primary miBoton offset-4 col-4" type="submit">Enviar
+            formulario
+          </button>
         </form>
+
       </section>
     </main>
   </section>

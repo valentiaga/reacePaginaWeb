@@ -77,7 +77,7 @@ img.logo {
 .footerContacto {
   height: 130px;
   position: absolute;
-  top: 160%;
+  top: 140%;
 }
 
 .pFooter {
@@ -121,7 +121,7 @@ img.logo {
   }
   .footerContacto {
     position: absolute;
-    top: 110%;
+    top: 90%;
   }
   img.logo {
     padding-left: 0px;
@@ -337,24 +337,31 @@ h5 {
 
 .formContacto {
   padding-top: 40px;
-  border: 1px solid rgba(18, 64, 142, 0.938);
   position: absolute;
-  background-color: rgba(254, 253, 253, 0.361);
-  top: 85%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -15%);
 }
 
 .lineaContacto {
   position: absolute;
-  top: 190%;
+  top: 170%;
   transform: translate(0, -50%);
   font-size: 17px;
   font-family: "Oswald", sans-serif;
 }
 
+#tituloContacto {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 5;
+  border-bottom: rgba(18, 64, 142, 0.938);
+}
+
 .imgContacto {
-  opacity: 0.4;
+  opacity: 0.1;
   margin-top: 90px;
 }
 
@@ -377,12 +384,7 @@ h5 {
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 16px;
-}
-
-.input-group {
-  height: 120px;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  margin-top: 20px;
 }
 
 .inputArchivo {
@@ -395,8 +397,11 @@ h5 {
     font-size: 13px;
   }
   .formContacto {
-    transform: translate(-50%, -10%);
-    border: 2px solid rgba(18, 64, 142, 0.938);
+    transform: translate(-50%, -25%);
+  }
+  .imgContacto {
+    width: 80%;
+    height: auto;
   }
   .miBoton {
     padding: 3px 10px;
@@ -407,9 +412,6 @@ h5 {
   }
   .lineaContacto {
     display: none;
-  }
-  .imgContacto {
-    height: auto;
   }
   .formulario {
     font-size: 13px;

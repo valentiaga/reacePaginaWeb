@@ -9,10 +9,8 @@
 .formContacto {
     @extend %form;
     padding-top: 40px;
-    border: 1px solid $color-ppal;
     position: absolute;
-    background-color: lighten(rgba(204, 201, 201, 0.361), 20%);
-    top:85%;
+    top:65%;
     left: 50%;
     transform: translate(-50%,-15%);
     
@@ -20,17 +18,23 @@
 
 .lineaContacto {
     position: absolute;
-    top:190%;
+    top:170%;
     transform: translate(0,-50%);
     @include fontMixin (nth($list: $size, $n: 8), ('Oswald', sans-serif));
-
-    // font-size: nth($list: $size, $n: 8);
-    // font-family: 'Oswald', sans-serif;
     
+}
+#tituloContacto{
+    position: absolute;
+    // background-color: lighten(rgba(204, 201, 201, 0.361), 20%);
+    top:48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 5;
+    border-bottom: $color-ppal;
 }
 
 .imgContacto{
-   opacity: 0.4;
+   opacity: 0.1;
    margin-top: 90px;
 }
 
@@ -54,16 +58,20 @@
     border-radius: 5px;
     padding: nth($list: $size, $n: 2) nth($list: $size, $n: 4);
     font-size: 16px;
+    margin-top: 20px;
 }
 
+// .miInputMensaje{
+//     margin-top: 20px;
+// }
 
-.input-group {
-    height: 120px;
-    @include padd-V (nth($list: $size, $n: 2), nth($list: $size, $n: 4));
 
-    // padding-top: nth($list: $size, $n: 2);
-    // padding-bottom: nth($list: $size, $n: 4);
-}
+// .miInput-group {
+//     height: 120px;
+//     @include padd-V (nth($list: $size, $n: 2), nth($list: $size, $n: 4));
+//     // padding-top: nth($list: $size, $n: 2);
+//     // padding-bottom: nth($list: $size, $n: 4);
+// }
 .inputArchivo{
     padding-bottom: 30px;
 }
@@ -76,10 +84,18 @@
     }
 
     .formContacto{
-        transform: translate(-50%,-10%);
-        border: 2px solid $color-ppal;
+        transform: translate(-50%,-25%);
+
+        // border: 2px solid $color-ppal;
     }
 
+    .imgContacto{
+        width: 80%;
+        height: auto;
+        
+        // opacity: 0.1;
+        // margin-top: 90px;
+     }
     .miBoton {
         padding: 3px 10px;
         font-size: nth($list: $size, $n: 10);
@@ -99,7 +115,7 @@
     }
 
     .imgContacto{
-        height: auto;
+        // height: auto;
     }
 
     .formulario {
