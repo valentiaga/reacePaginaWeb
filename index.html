@@ -17,13 +17,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Nanum+Gothic&family=Oswald:wght@200&display=swap"
     rel="stylesheet">
+  <!-- ANIMACION -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
   <!-- encabezado -->
 
   <section class="container-fluid">
-    <header class="row headerWeb">
+    <header class="row headerWeb header_index">
       <img class="logoHeader col-lg-2" src="./img/style/reale sin fondo.png" alt="">
       <nav class="col-lg-10 align-self-center">
         <ul class="nav nav-underline justify-content-end">
@@ -50,7 +52,7 @@
     </header>
 
     <header class="headerMovil">
-      <nav class="navBar-movil navbar bg-body-tertiary fixed-top">
+      <nav class=".navBar-movilIndex navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img class="logoHeader" src="./img/style/reale sin fondo.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -93,15 +95,16 @@
     </header>
 
     <!--contenido central-->
-    <main  id="index_main">
-      <div>
+    <main id="index_main">
+      <div class="divIndex">
         <img class="imgIndex" src="./img/style/indexmain/mdp1.jpeg" alt="">
+        <img class="imgIndexMovil" src="./img/style/nuevoFondo.jpeg" height="700px" alt="">
       </div>
       <p class="pNuestraEmpresa">Nuestra Empresa</p>
       <div class="presentacionEmpresa text-center offset-lg-2 col-lg-8 offset-1 col-10">
-        <h1>REALE CONSTRUCTORA S.A.</h1>
-        <h2 >Sentite acompañado y guiado profesionalmente desde el inicio hasta el fin de la obra</h2>
-        <p class=" wrapper">
+        <h1 class="animate__animated animate__fadeIn">REALE CONSTRUCTORA S.A.</h1>
+        <h2 class="animate__animated animate__fadeIn">Sentite acompañado y guiado profesionalmente desde el inicio hasta el fin de la obra</h2>
+        <p class=" wrapper animate__animated animate__fadeIn">
           Reale Constructora es una compañía dedicada a la dirección, ejecución y planificación de
           proyectos relacionados con la construcción de viviendas unifamiliares, multifamiliares, edificios, oficinas,
           instituciones, industrias y demás. Somos una empresa con más de 30 años de trayectoria.
@@ -171,7 +174,7 @@
               <li><img src="./img/logotiposClientes/casinoCentral.jpeg" class="d-block" alt="..."></li>
             </ul>
           </div>
-          
+
           <div class="carousel-item item-mio" data-bs-interval="2000">
             <ul class="d-flex justify-content-around">
               <li> <img src="./img/logotiposClientes/viaAppia.png" class="d-block " alt="..."></li>

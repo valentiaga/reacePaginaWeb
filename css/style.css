@@ -12,13 +12,6 @@ header {
   top: 0;
   height: 110px;
 }
-
-img.logoHeader {
-  padding-left: 10%;
-  height: 100px;
-  align-self: center;
-}
-
 header nav ul li {
   padding-left: 3px;
   padding-right: 30px;
@@ -29,7 +22,13 @@ header nav ul li .navBar-mio {
   font-size: 18px;
 }
 
-#header_index {
+img.logoHeader {
+  padding-left: 10%;
+  height: 100px;
+  align-self: center;
+}
+
+.header_index {
   background-image: url(../img/grisClaro0.jpeg);
 }
 
@@ -37,7 +36,7 @@ header nav ul li .navBar-mio {
   display: none;
 }
 
-@media only screen and (max-width: 1070px) {
+@media only screen and (max-width: 1100px) {
   header {
     justify-content: center;
     height: auto;
@@ -50,6 +49,9 @@ header nav ul li .navBar-mio {
   }
   .navBar-movil {
     background-image: url(../img/style/grisClaro.jpeg);
+  }
+  .navBar-movilIndex {
+    background-image: url(../img/style/grisClaro0.jpeg);
   }
   img.logoHeader {
     height: 60px;
@@ -107,7 +109,7 @@ img.logo {
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1100px) {
   .footer {
     justify-content: center;
     align-items: center;
@@ -208,7 +210,7 @@ h5 {
   opacity: 50%;
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1100px) {
   body {
     padding-top: 86px;
     padding-bottom: 370px;
@@ -255,8 +257,15 @@ h5 {
 
 .imgIndex {
   width: 100%;
-  opacity: 0.4;
+  opacity: 0.3;
   height: 700px;
+}
+
+.imgIndexMovil {
+  display: none;
+  opacity: 0.4;
+  object-fit: contain;
+  height: auto;
 }
 
 .presentacionEmpresa {
@@ -298,19 +307,19 @@ h5 {
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
   .wrapper {
     font-size: 15px;
     width: 100%;
     margin: 0;
   }
   .imgIndex {
-    height: auto;
+    display: none;
   }
   .presentacionEmpresa {
     position: absolute;
-    top: 30%;
-    background-color: rgba(235, 235, 238, 0.829);
+    top: 10%;
+    background-color: rgba(235, 235, 238, 0);
   }
   .carruselWeb {
     display: none;
@@ -323,15 +332,65 @@ h5 {
     width: 100%;
     object-fit: contain;
   }
+  .pNuestraEmpresa {
+    display: none;
+  }
 }
-@media screen and (min-width: 471px) and (max-width: 1024px) {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
   .clientes {
-    padding-top: 200px;
+    padding-top: 0px;
+  }
+  #index_main {
+    padding-bottom: 5%;
+  }
+  .imgIndexMovil {
+    display: block;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .clientes {
+    padding-top: 0px;
+  }
+  #index_main {
+    padding-bottom: 5%;
+  }
+  .imgIndexMovil {
+    display: block;
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .clientes {
+    padding-top: 0px;
+  }
+  .imgIndexMovil {
+    display: block;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 471px) and (max-width: 576px) {
+  .clientes {
+    padding-top: 0px;
+  }
+  .imgIndexMovil {
+    display: block;
+    height: 500px;
   }
 }
 @media screen and (min-width: 380px) and (max-width: 470px) {
   .clientes {
-    padding-top: 300px;
+    padding-top: 0px;
+  }
+  .imgIndexMovil {
+    display: block;
+    height: 550px;
   }
 }
 .formulario {

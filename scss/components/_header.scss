@@ -5,15 +5,6 @@ header {
     position: absolute;
     top: 0;
     height: 110px;
-}
-
-img.logoHeader {
-    padding-left: 10%;
-    height: 100px;
-    align-self: center;
-}
-
-header {
     nav {
         ul {
             li {
@@ -29,7 +20,15 @@ header {
     }
 }
 
-#header_index {
+img.logoHeader {
+    padding-left: 10%;
+    height: 100px;
+    align-self: center;
+}
+
+
+
+.header_index {
     background-image: url(../img/grisClaro0.jpeg);
 }
 
@@ -38,12 +37,12 @@ header {
 }
 
 
-@media only screen and (max-width: 1070px) {
+@media only screen and (max-width: 1100px) {
     header {
         justify-content: center;
         height: auto;
     }
-
+    
     .headerWeb {
         display: none;
     }
@@ -54,6 +53,9 @@ header {
 
     .navBar-movil {
         background-image: url(../img/style/grisClaro.jpeg);
+    }
+    .navBar-movilIndex {
+        background-image: url(../img/style/grisClaro0.jpeg);
     }
 
     img.logoHeader {
