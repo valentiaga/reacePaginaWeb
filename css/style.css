@@ -323,8 +323,15 @@ h5 {
     width: 100%;
     object-fit: contain;
   }
+}
+@media screen and (min-width: 471px) and (max-width: 1024px) {
   .clientes {
     padding-top: 200px;
+  }
+}
+@media screen and (min-width: 380px) and (max-width: 470px) {
+  .clientes {
+    padding-top: 280px;
   }
 }
 .formulario {
