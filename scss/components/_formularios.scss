@@ -3,52 +3,30 @@
     padding-top: 30px;
 }
 
-.sectionContacto{
-    position: relative; 
-}
 .formContacto {
     @extend %form;
-    padding-top: 40px;
-    position: absolute;
-    top:65%;
-    left: 50%;
-    transform: translate(-50%,-15%);
-    
+    padding-top: 80px;
 }
 
-.lineaContacto {
-    position: absolute;
-    top:170%;
-    transform: translate(0,-50%);
-    @include fontMixin (nth($list: $size, $n: 8), ('Oswald', sans-serif));
-    
-}
-#tituloContacto{
-    position: absolute;
-    // background-color: lighten(rgba(204, 201, 201, 0.361), 20%);
-    top:48%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-weight: 5;
-    border-bottom: $color-ppal;
+
+.imgContacto {
+    opacity: 0.1;
+    margin-top: 90px;
 }
 
-.imgContacto{
-   opacity: 0.1;
-   margin-top: 90px;
-}
+// .divImagenContacto{
+//     // height: 500px;
+//     // background: rgb(18,64,142);
+//     // background: linear-gradient(0deg, rgba(18,64,142,0.01) 0%, rgba(18,64,142,0.01) 8%, rgba(41,97,182,0.9262298669467787) 69%, rgba(17,59,131,1) 99%);
+//     // background-position: 50%10%;
+//     background-size: cover;
+// }
 
-.divImagenContacto{
-    height: 500px;
-    background: rgb(18,64,142);
-    background: linear-gradient(0deg, rgba(18,64,142,0.01) 0%, rgba(18,64,142,0.01) 8%, rgba(41,97,182,0.9262298669467787) 69%, rgba(17,59,131,1) 99%);
-    // background-position: 50%10%;
-    background-size: cover;
-}
-
-.miFormControl:focus {
-    box-shadow: 0 0 0 0.2rem rgba(173, 183, 225, 0.25);
-    border: nth($list: $size, $n: 1);
+.miFormControl {
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(173, 183, 225, 0.25);
+        border: nth($list: $size, $n: 1);
+    }
 }
 
 .miBoton {
@@ -61,18 +39,7 @@
     margin-top: 20px;
 }
 
-// .miInputMensaje{
-//     margin-top: 20px;
-// }
-
-
-// .miInput-group {
-//     height: 120px;
-//     @include padd-V (nth($list: $size, $n: 2), nth($list: $size, $n: 4));
-//     // padding-top: nth($list: $size, $n: 2);
-//     // padding-bottom: nth($list: $size, $n: 4);
-// }
-.inputArchivo{
+.inputArchivo {
     padding-bottom: 30px;
 }
 
@@ -83,39 +50,21 @@
         font-size: nth($list: $size, $n: 10);
     }
 
-    .formContacto{
-        transform: translate(-50%,-25%);
-
-        // border: 2px solid $color-ppal;
-    }
-
-    .imgContacto{
+    .imgContacto {
         width: 80%;
         height: auto;
-        
-        // opacity: 0.1;
-        // margin-top: 90px;
-     }
+    }
+    .formContacto {
+        padding-top: 50px;
+    }
+
     .miBoton {
         padding: 3px 10px;
         font-size: nth($list: $size, $n: 10);
     }
 
-    // .inputArchivo{
-    //     padding-bottom: 300px;
-    // }
     .miInputMensaje {
         font-size: nth($list: $size, $n: 10);
-    }
-
-    .lineaContacto {
-        // font-size: nth($list: $size, $n: 10);
-        // font-family: 'Oswald', sans-serif;
-        display: none;
-    }
-
-    .imgContacto{
-        // height: auto;
     }
 
     .formulario {

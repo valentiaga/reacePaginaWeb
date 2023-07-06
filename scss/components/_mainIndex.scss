@@ -84,6 +84,10 @@
 
 
 @media screen and (max-width: 1100px) {
+    #index_main{
+        padding-bottom: 0%;
+    position: relative;
+    }
     .wrapper {
         font-size: nth($list: $size, $n: 3);
         width: 100%;

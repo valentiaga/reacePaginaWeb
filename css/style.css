@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .formContacto, .formulario {
   padding-bottom: 50px;
   font-size: 18px;
@@ -39,13 +40,26 @@ img.logoHeader {
 @media only screen and (max-width: 1100px) {
   header {
     justify-content: center;
-    height: auto;
   }
   .headerWeb {
     display: none;
   }
   .headerMovil {
     display: block;
+    height: 80px;
+  }
+  .miNavBarToggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .miNavBarToggler:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .navbar-toggler-icon {
+    transform: scale(0.7); /* Ajusta el valor según tus necesidades */
   }
   .navBar-movil {
     background-image: url(../img/style/grisClaro.jpeg);
@@ -54,7 +68,7 @@ img.logoHeader {
     background-image: url(../img/style/grisClaro0.jpeg);
   }
   img.logoHeader {
-    height: 60px;
+    height: 50px;
   }
 }
 img.logo {
@@ -78,8 +92,7 @@ img.logo {
 
 .footerContacto {
   height: 130px;
-  position: absolute;
-  top: 140%;
+  top: 100%;
 }
 
 .pFooter {
@@ -123,7 +136,7 @@ img.logo {
   }
   .footerContacto {
     position: absolute;
-    top: 90%;
+    top: 70%;
   }
   img.logo {
     padding-left: 0px;
@@ -213,18 +226,18 @@ h5 {
 
 @media screen and (max-width: 1100px) {
   body {
-    padding-top: 86px;
+    padding-top: 80px;
     padding-bottom: 370px;
   }
   #bodyNosotros {
-    padding-top: 86px;
+    padding-top: 80px;
     padding-bottom: 370px;
   }
   .botContacto {
     font-size: 12px;
   }
   .linea {
-    height: 2px;
+    height: 1px;
     width: 50%;
     left: 25%;
   }
@@ -309,6 +322,10 @@ h5 {
 }
 
 @media screen and (max-width: 1100px) {
+  #index_main {
+    padding-bottom: 0%;
+    position: relative;
+  }
   .wrapper {
     font-size: 15px;
     width: 100%;
@@ -398,45 +415,13 @@ h5 {
   padding-top: 30px;
 }
 
-.sectionContacto {
-  position: relative;
-}
-
 .formContacto {
-  padding-top: 40px;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -15%);
-}
-
-.lineaContacto {
-  position: absolute;
-  top: 170%;
-  transform: translate(0, -50%);
-  font-size: 17px;
-  font-family: "Oswald", sans-serif;
-}
-
-#tituloContacto {
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 5;
-  border-bottom: rgba(18, 64, 142, 0.938);
+  padding-top: 80px;
 }
 
 .imgContacto {
   opacity: 0.1;
   margin-top: 90px;
-}
-
-.divImagenContacto {
-  height: 500px;
-  background: rgb(18, 64, 142);
-  background: linear-gradient(0deg, rgba(18, 64, 142, 0.01) 0%, rgba(18, 64, 142, 0.01) 8%, rgba(41, 97, 182, 0.9262298669) 69%, rgb(17, 59, 131) 99%);
-  background-size: cover;
 }
 
 .miFormControl:focus {
@@ -463,12 +448,12 @@ h5 {
   .miFormControl {
     font-size: 13px;
   }
-  .formContacto {
-    transform: translate(-50%, -25%);
-  }
   .imgContacto {
     width: 80%;
     height: auto;
+  }
+  .formContacto {
+    padding-top: 50px;
   }
   .miBoton {
     padding: 3px 10px;
@@ -476,9 +461,6 @@ h5 {
   }
   .miInputMensaje {
     font-size: 13px;
-  }
-  .lineaContacto {
-    display: none;
   }
   .formulario {
     font-size: 13px;
