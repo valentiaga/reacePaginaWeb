@@ -56,15 +56,15 @@
 //     display: none;
 // }
 .divCuartaImg {
-    display: block;
+    display:  nth($list: $display, $n: 2);
 }
 
 .divPrimeraImagen {
-    display: none;
+    display:  nth($list: $display, $n: 1);
 }
 
 .divBotonDesktop {
-    display: none;
+    display:  nth($list: $display, $n: 1);
 }
 
 .miBotonGaleria {
@@ -78,15 +78,15 @@
 }
 
 #collapseCheckboxVM {
-    display: none;
+    display:  nth($list: $display, $n: 1);
 }
 
 #collapseCheckboxVU {
-    display: none;
+    display:  nth($list: $display, $n: 1);
 }
 
 .collapse {
-    display: none;
+    display:  nth($list: $display, $n: 1);
 }
 
 // #collapseCheckboxVM {
@@ -125,7 +125,7 @@
 #collapseCheckboxVM {
     &:checked{
         +.miBotonGaleria {
-            display: none;
+            display:  nth($list: $display, $n: 1);
         }
     }
 }
@@ -133,7 +133,7 @@
 #collapseCheckboxVU {
     &:checked{
         +.miBotonGaleria {
-            display: none;
+            display:  nth($list: $display, $n: 1);
         }
     }
 }
@@ -150,11 +150,11 @@
     }
 
     .divPrimeraImagenVM {
-        display: block;
+        display: nth($list: $display, $n: 2);
     }
 
     .divCuartaImgVM {
-        display: none;
+        display: nth($list: $display, $n: 1);
     }
 
     .content_img {
@@ -185,11 +185,11 @@
     }
 
     .divPrimeraImagenVM {
-        display: block;
+        display:  nth($list: $display, $n: 2);
     }
 
     .divCuartaImgVM {
-        display: none;
+        display:  nth($list: $display, $n: 1);
     }
 }
 
@@ -207,11 +207,11 @@
     }
 
     .divPrimeraImagenVM {
-        display: block;
+        display:  nth($list: $display, $n: 2);
     }
 
     .divCuartaImgVM {
-        display: none;
+        display:  nth($list: $display, $n: 1);
     }
 }
 

@@ -1,8 +1,10 @@
+// USO DE EXTEND FORM
 .formulario {
     @extend %form;
-    padding-top: 30px;
+    padding-top: nth($list: $size, $n: 5);
 }
 
+// USO DE EXTEND FORM
 .formContacto {
     @extend %form;
     padding-top: 80px;
@@ -40,7 +42,7 @@
 }
 
 .inputArchivo {
-    padding-bottom: 30px;
+    padding-bottom: nth($list: $size, $n: 5);
 }
 
 @media screen and (max-width: 1024px) {

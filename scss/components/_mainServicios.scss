@@ -9,7 +9,7 @@
 // }
 
 .imagen {
-    display: none;
+    display:  nth($list: $display, $n: 1);
     width: 350px;
     height: 250px;
     background-image: url(../img/style/albanileria2.jpeg);
@@ -21,7 +21,7 @@
     &:hover{
         font-weight: bold;
         +.imagen{
-            display: block;
+            display:  nth($list: $display, $n: 2);
         }
     }
 }

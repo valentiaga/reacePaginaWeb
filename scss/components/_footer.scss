@@ -5,19 +5,18 @@ img.logo {
 }
 
 .footer {
-    // background: rgb(18,64,142);
-    // background: linear-gradient(180deg, rgba(18,64,142,0.01) 0%, rgba(41,97,182,0.9262298669467787) 15%, rgba(17,59,131,1) 100%, rgba(18,64,142,0.01) 100%);
-//     background: rgb(18,64,142);
-// background: linear-gradient(179deg, rgba(18,64,142,0.01) 0%, rgba(41,97,182,1) 10%, rgba(17,59,131,1) 85%, rgba(18,64,142,0.01) 100%);
+ 
     background-color: $color-ppal;
     width: 100%;
     position: absolute;
     bottom: 0;
     height: 110px;
+
+    // USO DE MAPA $ulFooter
     ul {
-        margin-bottom: 0;
-        list-style-type: none;
-        justify-content: end;
+        margin-bottom: map-get($map: $ulFooter, $key: marg-bot);
+        list-style-type: map-get($map: $ulFooter, $key: list-style);
+        justify-content: map-get($map: $ulFooter, $key: jus-content);
     }
 }
 
@@ -35,7 +34,6 @@ img.logo {
     height: nth($list: $size, $n: 7);
     width: auto;
     @include padd-H (nth($list: $size, $n: 1), nth($list: $size, $n: 4));
-
     // padding-left: nth($list: $size, $n: 1);
     // padding-right: nth($list: $size, $n: 4);
     transition: 0.5s;
