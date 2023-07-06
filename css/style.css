@@ -63,6 +63,7 @@ img.logoHeader {
   }
   .navBar-movil {
     background-image: url(../img/style/grisClaro.jpeg);
+    height: 80px;
   }
   .navBar-movilIndex {
     background-image: url(../img/style/grisClaro0.jpeg);
@@ -157,6 +158,7 @@ body {
   background-image: url(../img/style/grisClaro0.jpeg);
   position: relative;
   overflow-x: hidden;
+  top: 0;
   padding-top: 110px;
   padding-bottom: 120px;
 }
