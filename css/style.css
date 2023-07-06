@@ -292,6 +292,11 @@ h5 {
   background-color: rgba(235, 235, 238, 0.829);
 }
 
+.animate__animated.animate__fadeIn {
+  --animate-duration: 3s;
+}
+
+/* This changes all the animations globally */
 .wrapper {
   width: 65%;
   margin: auto;
