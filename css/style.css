@@ -61,6 +61,9 @@ img.logoHeader {
   .navbar-toggler-icon {
     transform: scale(0.7); /* Ajusta el valor según tus necesidades */
   }
+  #offcanvasNavbar {
+    width: 300px;
+  }
   .navBar-movil {
     background-image: url(../img/style/grisClaro.jpeg);
     height: 80px;
