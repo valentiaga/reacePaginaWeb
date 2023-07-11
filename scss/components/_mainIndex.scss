@@ -25,14 +25,16 @@
 .imgIndexMovil{
     display:  nth($list: $display, $n: 1);
     opacity: 0.4;
-    object-fit: contain;
-    height: auto;
+    object-fit: cover;
+    height: 492px;
+    width: 100%;
 }
 
 .presentacionEmpresa {
     position: absolute;
     top: 50%;
     background-color: rgba(235, 235, 238, 0.829);
+    font-weight: bold;
 }
 .animate__animated.animate__fadeIn {
     --animate-duration: 3s;
@@ -137,8 +139,8 @@
     .imgIndexMovil{
         display:  nth($list: $display, $n: 2);
         height:350px;
-        width: 100%;
-        object-fit: cover;
+        // width: 100%;
+        // object-fit: cover;
     }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -151,8 +153,8 @@
     .imgIndexMovil{
         display:  nth($list: $display, $n: 2);
         height:340px;
-        width: 100%;
-        object-fit: cover;
+        // width: 100%;
+        // object-fit: cover;
     }
 }
 
@@ -163,8 +165,8 @@
     .imgIndexMovil{
         display:  nth($list: $display, $n: 2);
         height:400px;
-        width: 100%;
-        object-fit: cover;
+        // width: 100%;
+        // object-fit: cover;
     }
 }
 
@@ -174,7 +176,8 @@
     }
     .imgIndexMovil{
         display:  nth($list: $display, $n: 2);
-        height:500px;  
+        height:500px; 
+        // object-fit: cover; 
     }
 }
 @media screen and (min-width: 380px) and (max-width: 470px) {
@@ -183,7 +186,10 @@
     }
     .imgIndexMovil{
         display: block;
-        height:550px;
-        
+        // height:550px;
+        // object-fit: cover;
+    }
+    .wrapper{
+        font-size: 14px;
     }
 }

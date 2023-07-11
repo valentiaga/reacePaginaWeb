@@ -161,6 +161,7 @@ body {
   background-image: url(../img/style/grisClaro0.jpeg);
   position: relative;
   overflow-x: hidden;
+  max-width: 100%;
   padding-top: 110px;
   padding-bottom: 120px;
 }
@@ -282,14 +283,16 @@ h5 {
 .imgIndexMovil {
   display: none;
   opacity: 0.4;
-  object-fit: contain;
-  height: auto;
+  object-fit: cover;
+  height: 492px;
+  width: 100%;
 }
 
 .presentacionEmpresa {
   position: absolute;
   top: 50%;
   background-color: rgba(235, 235, 238, 0.829);
+  font-weight: bold;
 }
 
 .animate__animated.animate__fadeIn {
@@ -373,8 +376,6 @@ h5 {
   .imgIndexMovil {
     display: block;
     height: 350px;
-    width: 100%;
-    object-fit: cover;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -387,8 +388,6 @@ h5 {
   .imgIndexMovil {
     display: block;
     height: 340px;
-    width: 100%;
-    object-fit: cover;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -398,8 +397,6 @@ h5 {
   .imgIndexMovil {
     display: block;
     height: 400px;
-    width: 100%;
-    object-fit: cover;
   }
 }
 @media screen and (min-width: 471px) and (max-width: 576px) {
@@ -417,7 +414,9 @@ h5 {
   }
   .imgIndexMovil {
     display: block;
-    height: 550px;
+  }
+  .wrapper {
+    font-size: 14px;
   }
 }
 .formulario {
