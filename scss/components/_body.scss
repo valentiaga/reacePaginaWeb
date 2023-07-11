@@ -7,7 +7,7 @@ body {
     background-image: url(../img/style/grisClaro0.jpeg);
     position: relative;
     overflow-x: hidden;
-    max-width: 100%;
+    width: 100%;
     @include padd-V (110px, 120px);
 }
 
