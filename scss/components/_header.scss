@@ -34,6 +34,7 @@ img.logoHeader {
 
 .headerMovil {
     display: none;
+    width: 95%;
 }
 
 
@@ -62,7 +63,7 @@ img.logoHeader {
         }
       }
     .navbar-toggler-icon {
-        transform: scale(0.7); /* Ajusta el valor según tus necesidades */
+        transform: scale(0.7);
     }
     #offcanvasNavbar{
         width: 300px;
