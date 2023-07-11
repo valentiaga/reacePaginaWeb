@@ -655,68 +655,8 @@ h5 {
   padding-top: 3%;
 }
 
-.imagen {
-  display: none;
-  width: 350px;
-  height: 250px;
-  background-image: url(../img/style/albanileria2.jpeg);
-  background-size: cover;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-}
-
 .texto:hover {
   font-weight: bold;
-}
-.texto:hover + .imagen {
-  display: block;
-}
-
-.plom {
-  background-image: url(../img/style/plomeria.jpeg);
-}
-
-.electrica {
-  background-image: url(../img/style/instalacionesElectricas.jpeg);
-}
-
-.sanit {
-  background-image: url(../img/style/instalacionSanitaria.jpg);
-  height: 290px;
-}
-
-.pisos {
-  background-image: url(../img/style/colocacionPisos.jpeg);
-}
-
-.estructuras {
-  background-image: url(../img/style/Cimientacion.jpg);
-}
-
-.asesoramientoTecnico {
-  background-position: 50% 70%;
-  background-image: url(../img/style/asesoramiento.jpg);
-}
-
-.revestimiento {
-  width: 400px;
-  height: 250px;
-  background-image: url(../img/style/colocacionRevestimiento.jpeg);
-}
-
-.cubiertas {
-  background-image: url(../img/style/cubiertas.webp);
-}
-
-.aislaciones {
-  background-image: url(../img/style/aislacionTecho.png);
-}
-
-.calefaccion {
-  background-image: url(../img/style/calefaccion.png);
-}
-
-.pintura {
-  background-image: url(../img/style/pintura.jpeg);
 }
 
 .servicios section p {
@@ -728,6 +668,7 @@ h5 {
 
 .pServicio {
   text-align: center;
+  font-weight: bold;
   padding-bottom: 3%;
   font-size: 20px;
   font-family: "Kanit", sans-serif;

@@ -8,73 +8,73 @@
 // background: radial-gradient(circle, rgba(18,64,142,0.01) 0%, rgba(18,64,142,0.01) 8%, rgba(41,97,182,0.19653799019607843) 69%, rgba(17,59,131,1) 99%);
 // }
 
-.imagen {
-    display:  nth($list: $display, $n: 1);
-    width: 350px;
-    height: 250px;
-    background-image: url(../img/style/albanileria2.jpeg);
-    background-size: cover;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+// .imagen {
+//     display:  nth($list: $display, $n: 1);
+//     width: 350px;
+//     height: 250px;
+//     background-image: url(../img/style/albanileria2.jpeg);
+//     background-size: cover;
+//     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 
-}
+// }
 .texto{
     &:hover{
         font-weight: bold;
-        +.imagen{
-            display:  nth($list: $display, $n: 2);
-        }
+        // +.imagen{
+        //     display:  nth($list: $display, $n: 2);
+        // }
     }
 }
 
 
 
-.plom {
-    background-image: url(../img/style/plomeria.jpeg);
-}
+// .plom {
+//     background-image: url(../img/style/plomeria.jpeg);
+// }
 
-.electrica {
-    background-image: url(../img/style/instalacionesElectricas.jpeg);
-}
+// .electrica {
+//     background-image: url(../img/style/instalacionesElectricas.jpeg);
+// }
 
-.sanit {
-    background-image: url(../img/style/instalacionSanitaria.jpg);
-    height: 290px;
-}
+// .sanit {
+//     background-image: url(../img/style/instalacionSanitaria.jpg);
+//     height: 290px;
+// }
 
-.pisos {
-    background-image: url(../img/style/colocacionPisos.jpeg);
-}
+// .pisos {
+//     background-image: url(../img/style/colocacionPisos.jpeg);
+// }
 
-.estructuras {
-    background-image: url(../img/style/Cimientacion.jpg);
-}
+// .estructuras {
+//     background-image: url(../img/style/Cimientacion.jpg);
+// }
 
-.asesoramientoTecnico {
-    background-position: 50%70%;
-    background-image: url(../img/style/asesoramiento.jpg);
-}
+// .asesoramientoTecnico {
+//     background-position: 50%70%;
+//     background-image: url(../img/style/asesoramiento.jpg);
+// }
 
-.revestimiento {
-    width: 400px;
-    height: 250px;
-    background-image: url(../img/style/colocacionRevestimiento.jpeg);
-}
+// .revestimiento {
+//     width: 400px;
+//     height: 250px;
+//     background-image: url(../img/style/colocacionRevestimiento.jpeg);
+// }
 
-.cubiertas {
-    background-image: url(../img/style/cubiertas.webp);
-}
+// .cubiertas {
+//     background-image: url(../img/style/cubiertas.webp);
+// }
 
-.aislaciones {
-    background-image: url(../img/style/aislacionTecho.png);
-}
+// .aislaciones {
+//     background-image: url(../img/style/aislacionTecho.png);
+// }
 
-.calefaccion {
-    background-image: url(../img/style/calefaccion.png);
-}
+// .calefaccion {
+//     background-image: url(../img/style/calefaccion.png);
+// }
 
-.pintura {
-    background-image: url(../img/style/pintura.jpeg);
-}
+// .pintura {
+//     background-image: url(../img/style/pintura.jpeg);
+// }
 
 .servicios{
     section{
@@ -91,6 +91,7 @@
 
 .pServicio {
     text-align: center;
+    font-weight: bold;
     padding-bottom: 3%;
     @include fontMixin (nth($list: $size, $n: 4), ('Kanit', sans-serif));
 
