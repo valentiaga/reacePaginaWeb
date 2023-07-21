@@ -318,7 +318,7 @@ h5 {
   padding: 20px;
 }
 
-.carousel {
+.carruselWeb {
   padding-top: 2%;
   padding-bottom: 5%;
 }
@@ -331,6 +331,8 @@ h5 {
 
 .carruselMovil {
   display: none;
+  padding-top: 2%;
+  padding-bottom: 5%;
 }
 
 @media screen and (max-width: 1100px) {
